@@ -19,6 +19,7 @@ output "vpn_connection_customer_gateway_configuration" {
     "",
     aws_vpn_connection.default.*.customer_gateway_configuration,
   )
+  sensitive = true
 }
 
 output "vpn_connection_tunnel1_address" {
